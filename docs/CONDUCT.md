@@ -16,29 +16,49 @@ Examples of behavior that contributes to a positive environment for our communit
 * Accepting responsibility and apologizing to those affected by our mistakes, and learning from the experience
 * Focusing on what is best not just for us as individuals, but for the overall community
 
+Additional team standards include:
+
+* Adhering to the 305Soft policy of no distracted use of technology during meetings (phones must be put away unless being used directly for project-related work).
+* Participating actively and respectfully in discussions.
+* Completing assigned work on time and to an agreed-upon standard.
+* Arriving prepared and on time to meetings.
+* Practicing active listening and sharing airtime respectfully.
+
+Team operational expectations:
+
+* Decisions: The team will strive for consensus when making decisions. If consensus cannot be reached, decisions will be made by majority vote.
+* Attendance: Members are expected to attend all scheduled meetings (in-person or virtual). Legitimate reasons for missing include illness, emergency, academic conflicts, or unavoidable work obligations. Members who miss a meeting must notify the team in advance (when possible), review meeting minutes, and complete any assigned tasks.
+* Assignments: Tasks will be agreed upon during meetings and distributed fairly, considering individual strengths and interests. If a member does not complete or poorly completes an assignment without communication, the team will first address the issue privately. Continued issues may result in reassignment of responsibilities or escalation to the instructor.
+* Participation: The team will communicate using agreed-upon platforms (e.g., GitHub and group messaging). All members are expected to contribute ideas, engage in discussions, and support team goals.
+* Meeting Times and Locations/Mediums: Meeting times and formats will be determined collaboratively to reasonably accommodate all members.
+* Agenda and Minutes/Notes: Each meeting will have an agenda. A rotating member will take notes, including attendance, decisions, and assignments. Notes will be shared with the team.
+* Promptness: Members are expected to arrive on time. Repeated lateness without communication will be addressed privately.
+* Conversational Courtesies: Members will practice respectful dialogue, avoid interrupting, stay on topic, and ensure balanced participation.
+
 Examples of unacceptable behavior include:
 
 * The use of sexualized language or imagery, and sexual attention or advances of any kind
 * Trolling, insulting or derogatory comments, and personal or political attacks
 * Public or private harassment
 * Publishing others' private information, such as a physical or email address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a professional setting
+* Other conduct which could reasonably be considered inappropriate in a professional setting\
 
 ## Enforcement Responsibilities
 
-Community leaders are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, offensive, or harmful.
+Community leaders, including the SCRUM Master and designated team members, are responsible for clarifying and enforcing our standards of acceptable behavior and will take appropriate and fair corrective action in response to any behavior that they deem inappropriate, threatening, unprofessional, or harmful.
 
 Community leaders have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, and will communicate reasons for moderation decisions when appropriate.
 
 ## Scope
 
-This Code of Conduct applies within all community spaces, and also applies when an individual is officially representing the community in public spaces. Examples of representing our community include using an official e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event.
+This Code of Conduct applies within all team spaces, including in-person meetings, virtual meetings, GitHub repositories, group messaging platforms, presentations, and any setting where an individual is representing the team in public spaces.
 
 ## Enforcement
 
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the community leaders responsible for enforcement at [INSERT CONTACT METHOD]. All complaints will be reviewed and investigated promptly and fairly.
-
+Instances of abusive, harassing, or otherwise unacceptable behavior may be reported to the SCRUM Master at [Ethan Mott, ethan.mott001201336@uri.edu]. All complaints will be reviewed and investigated promptly and fairly.
 All community leaders are obligated to respect the privacy and security of the reporter of any incident.
+
+The team agrees to enforce its internal rules through respectful communication, private discussions when issues arise, and collaborative problem-solving before escalation. Feedback should be constructive, specific, and preferably delivered privately first. Team members agree to both give and receive feedback professionally.
 
 ## Enforcement Guidelines
 
