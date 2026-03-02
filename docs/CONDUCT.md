@@ -88,6 +88,19 @@ Community leaders will follow these Community Impact Guidelines in determining t
 
 **Consequence**: A permanent ban from any sort of public interaction within the community.
 
+### Gerald Garcia Urena
+![Gerald Signature](https://drive.google.com/file/d/1Sh6imG9Oc6NRAlsO8kaWybX6mf4dINIW/view?usp=drive_link)
+
+### Member 2 Name
+![Member 2 Signature](https://drive.google.com/uc?export=view&id=FILE_ID)
+
+### Member 3 Name
+![Member 3 Signature](https://drive.google.com/uc?export=view&id=FILE_ID)
+
+### Member 4 Name
+![Member 3 Signature](https://drive.google.com/uc?export=view&id=FILE_ID)
+
+
 ## Attribution
 
 This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 2.1, available at [https://www.contributor-covenant.org/version/2/1/code_of_conduct.html][v2.1].
