@@ -89,7 +89,7 @@ Community leaders will follow these Community Impact Guidelines in determining t
 **Consequence**: A permanent ban from any sort of public interaction within the community.
 
 ### Gerald Garcia Urena
-![Gerald Signature]([https://drive.google.com/file/d/1Sh6imG9Oc6NRAlsO8kaWybX6mf4dINIW/view?usp=drive_link](https://drive.google.com/file/d/1Sh6imG9Oc6NRAlsO8kaWybX6mf4dINIW/view?usp=sharing))
+![Gerald Signature](https://drive.google.com/file/d/1Sh6imG9Oc6NRAlsO8kaWybX6mf4dINIW/view?usp=sharing)
 
 ### Member 2 Name
 ![Member 2 Signature](https://drive.google.com/uc?export=view&id=FILE_ID)
