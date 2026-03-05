@@ -94,8 +94,8 @@ Community leaders will follow these Community Impact Guidelines in determining t
 ### Ethan Mott
 ![Ethan Mott Signature](https://drive.google.com/uc?export=view&id=1DDtFmE7Vr0QhNvrg_N4KuH7R55g8-lZe)
 
-### Member 3 Name
-![Member 3 Signature](https://drive.google.com/uc?export=view&id=FILE_ID)
+### William
+![William Signature](src/IMG_2589.jpeg)
 
 ### Member 4 Name
 ![Member 3 Signature](https://drive.google.com/uc?export=view&id=FILE_ID)
