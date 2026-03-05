@@ -91,8 +91,8 @@ Community leaders will follow these Community Impact Guidelines in determining t
 ### Gerald Garcia Urena
 ![Gerald Signature](https://drive.google.com/thumbnail?id=1Sh6imG9Oc6NRAlsO8kaWybX6mf4dINIW&sz=w1000)
 
-### Member 2 Name
-![Member 2 Signature](https://drive.google.com/uc?export=view&id=FILE_ID)
+### Ethan Mott
+![Member 2 Signature](https://drive.google.com/file/d/1DDtFmE7Vr0QhNvrg_N4KuH7R55g8-lZe/view?usp=sharing)
 
 ### Member 3 Name
 ![Member 3 Signature](https://drive.google.com/uc?export=view&id=FILE_ID)
