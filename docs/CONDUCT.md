@@ -98,7 +98,7 @@ Community leaders will follow these Community Impact Guidelines in determining t
 ![William Signature](src/IMG_2589.jpeg)
 
 ### James
-![James Signature](https://drive.google.com/uc?export=view&id=FILE_ID)
+![James Signature][(https://drive.google.com/uc?export=view&id=FILE_ID)](https://drive.google.com/file/d/1ic4kq5gWEshY3JAWvl2XZ07WKPVGwd7v/view?usp=sharing)
 
 
 ## Attribution
