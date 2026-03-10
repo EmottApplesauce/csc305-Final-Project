@@ -25,6 +25,13 @@ Supporting Data: Open ended responses specifically highlighted a desire to "trac
 Team Action (if any): Potentially develop a "Wardrobe Insights" dashboard that tracks the frequency of use for each item.
 
 
+Observation Statement: There is significant user interest in tracking clothing "utility", specifically what is being worn versus what is being ignored.
+
+Supporting Data: Open ended responses specifically highlighted a desire to "track how much of your wardrobe you actually wear" and "give data on which clothes you wear most frequently.
+
+Team Action (if any): Potentially develop a "Wardrobe Insights" dashboard that tracks the frequency of use for each item.
+
+
 Observation 4: Weather makes it hard for people to find clothes
 
 Observation Statement:  What makes choosing an outfit difficult for you?: applicants selected that weather was a factor in clothign slection that made it diffcult
