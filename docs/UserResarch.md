@@ -6,6 +6,7 @@ Observation Statement:
 Supporting Data:
 
 Team Action (if any):
+Gerald
 
 Observation 2: Weather makes it hard for people to find clothes
 
@@ -14,6 +15,7 @@ Observation Statement:  What makes choosing an outfit difficult for you?: applic
 Supporting Data:50.8% of applicants suggested What makes choosing an outfit difficult for you?  is because of the weather
 
 Team Action (if any):We need to have weather app installed so when checked it can suggest clothing tied to the state of the weather
+
 
 Observation 3: 
 
@@ -31,6 +33,8 @@ Supporting Data:
 
 Team Action (if any):
 
+
+Gerald
 Observation 5: users are willing to spend atleast 10-20 minutes or as long as it needs to have digital closet
 
 Observation Statement:How much time would you realistically spend setting up a digital closet?
