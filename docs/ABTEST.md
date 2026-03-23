@@ -35,4 +35,36 @@ Variations: Variant A (Control) shows the rating pop-up once the user uploads th
 
 <img width="522" height="557" alt="image" src="https://github.com/user-attachments/assets/c2687a63-c1ac-4348-a87f-dc0386f77a76" />
 
-## Test 4
+## Test 4 (main test)
+Gerald
+A/B Test Name: "Weather Temperature Display: Hidden vs. Visible on Outfit Card"
+User Story Number: US6 – NPS User Interface
+Metrics: Net Promoter Score (NPS), quick 1–2 question survey response rate (Happiness)
+
+Hypothesis:
+The app currently displays weather conditions on outfit suggestion cards — icons for sun, clouds, rain — but omits the actual temperature reading. This means users are receiving outfit recommendations without the most concrete piece of weather data they rely on when getting dressed. A suggestion like "lightweight linen shirt" is harder to evaluate when you don't know if it's 58°F or 82°F outside. The bottleneck isn't that users distrust the suggestions — it's that they can't verify them against real conditions, so they disengage. We believe that displaying the current temperature directly on the outfit card will give users a concrete anchor to validate the recommendation against their own experience, making them more likely to adopt the outfit, confirm it as worn, and submit NPS feedback that reflects genuine satisfaction rather than indifference.
+
+Single Variable Changed: Whether or not the current temperature reading is displayed inline on the outfit suggestion card. All other UI elements, logic, and copy remain identical across both variants.
+
+Experiment:
+Using Firebase A/B Testing via Remote Config with parameter weather_temp_display set to "hidden" (Control) or "visible" (Treatment). Eligible users are those who have been active for at least 7 days and have added ≥ 5 wardrobe items, ensuring feedback reflects users who have had meaningful experience with outfit suggestions. Split is 50/50. Firebase Analytics will track: outfit_card_viewed (with temp_displayed param), nps_rating_submitted (with rating_value and variant), outfit_worn_confirmed, and nps_prompt_dismissed. Primary metric is NPS score distribution across variants. Secondary metrics are survey response rate and outfit confirmation rate after card view.
+
+Variations:
+Variant A (Control) – No Temperature Shown:
+The outfit card displays weather condition icons (e.g. ☁ Partly cloudy) without a numeric temperature. Suggestions are described with general attributes like "lightweight" or "layering recommended" but are not tied to a specific reading the user can cross-reference with their own perception of the day.
+Variant B (Treatment) – Temperature Displayed:
+The outfit card shows the current temperature inline with the weather icon (e.g. ☁ Partly cloudy · 72°F), pulled from the user's location at the time the card is viewed. The suggestion is grounded in a specific, verifiable data point the user can immediately relate to their lived experience, increasing confidence in and adoption of the recommendation. Sonnet 4.6
+
+
+
+
+
+
+
+
+
+
+
+
+
+
