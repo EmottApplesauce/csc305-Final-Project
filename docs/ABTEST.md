@@ -23,3 +23,6 @@ Variant A (Control) – Manual One-by-One Entry:
 Users add items individually — photograph → categorize → save → repeat. Progress bar shows 1/5, 2/5, etc.
 Variant B (Treatment) – Bulk Upload + AI Auto-Categorization:
 Users select multiple photos at once from their camera roll. AI detects and categorizes each garment automatically. User reviews and confirms in one step.
+<img width="427" height="283" alt="image" src="https://github.com/user-attachments/assets/33bc61c9-0731-4912-a4e1-a1089271ef0b" />
+<img width="426" height="255" alt="image" src="https://github.com/user-attachments/assets/9db4cec6-5475-4cad-99ba-15371b166c2b" />
+
