@@ -20,24 +20,5 @@ Using Firebase A/B Testing via Remote Config with parameter onboarding_upload_mo
 Variations:
 Variant A (Control) – Manual One-by-One Entry:
 Users add items individually — photograph → categorize → save → repeat. Progress bar shows 1/5, 2/5, etc.
-┌─────────────────────────────────────┐
-│  👗 Add Your First Item             │
-│     ┌──────────────────────┐        │
-│     │   📷 Tap to Photo    │        │
-│     └──────────────────────┘        │
-│  Category:  [Tops ▾]                │
-│  Color:     [Blue ▾]                │
-│        [ Save Item ]                │
-│  Items added: ●○○○○  (1 of 5)       │
-└─────────────────────────────────────┘
 Variant B (Treatment) – Bulk Upload + AI Auto-Categorization:
 Users select multiple photos at once from their camera roll. AI detects and categorizes each garment automatically. User reviews and confirms in one step.
-┌─────────────────────────────────────┐
-│  📸 Add Your Wardrobe               │
-│  ┌──────┐ ┌──────┐ ┌──────┐ ┌────┐  │
-│  │  ✓   │ │  ✓  │ │  ✓   │ │ +  │  │
-│  └──────┘ └──────┘ └──────┘ └────┘  │
-│  🤖 AI detected: 5 tops, 2 pants    │
-│     — look right?                   │
-│    [ ✓ Looks Good, Continue ]       │
-└─────────────────────────────────────┘
