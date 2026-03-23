@@ -40,6 +40,5 @@ Variant A (Control) – Fixed Interval Prompt:
 NPS prompt appears as a modal after 30 days of app usage, regardless of what the user was doing.
 Variant B (Treatment) – Post "Mark as Worn" Prompt:
 NPS prompt appears immediately after the user taps "Mark as Worn," on the confirmation screen, while satisfaction is highest.
-<img width="426" height="282" alt="image" src="https://github.com/user-attachments/assets/2daaaf85-f1b7-437c-8ef1-a84e7f2fac38" />
 
 ## Test 4
