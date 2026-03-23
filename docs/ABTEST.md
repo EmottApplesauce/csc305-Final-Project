@@ -6,3 +6,38 @@ The specific bottleneck: Day 1 → Day 7 retention drop-off. This is where most 
 Hypothesis statement: If we delay showing ads until Day 7 (after users have experienced the AI outfit builder and laundry tracking), then Day 7 retention will increase, because users will have already built a habit and attached value to the app before being exposed to ads — making them more tolerant of them.
 What we're watching: Day 7 retention rate.
 
+
+
+
+James - A/B Test Name: "AI Auto-Categorization vs. Manual Categorization During Wardrobe Setup"
+User Story Number: US5: User Take picture of clothes or storing there clothes
+Metrics: Adoption (Signups), DAU / Retention, Total items uploaded by users
+Hypothesis:
+During wardrobe setup, users are required to manually categorize each clothing item after uploading a photo. This creates a bottleneck not in the number of items being added, but in the time and accuracy of the categorization step itself — users either spend too long deciding the right category, or assign the wrong one entirely, leading to a poorly organized wardrobe that undermines the quality of AI outfit suggestions down the line. We believe that if AI automatically categorizes clothing items from a photo and the user simply confirms, wardrobe setup will be completed faster and with greater categorization accuracy — because replacing active decision-making with a quick confirmation step removes the primary source of inefficiency in the flow, while still keeping the user in control of their data.
+whether clothing categorization is performed manually by the user or automatically suggested by AI.
+Experiment:
+Using Firebase A/B Testing via Remote Config with parameter onboarding_upload_mode set to "manual" (Control) or "bulk" (Treatment). 100% of new users are eligible since this targets the adoption funnel and poses no risk to existing users. Split is 50/50. Firebase Analytics will track: onboarding_started, item_added (with item_count_total), onboarding_completed (≥5 items), onboarding_abandoned (with last_item_count), and first_outfit_generated. Primary metric is onboarding completion rate. Target ~x users per variant over 2–3 weeks.
+Variations:
+Variant A (Control) – Manual One-by-One Entry:
+Users add items individually — photograph → categorize → save → repeat. Progress bar shows 1/5, 2/5, etc.
+┌─────────────────────────────────────┐
+│  👗 Add Your First Item             │
+│     ┌──────────────────────┐        │
+│     │   📷 Tap to Photo    │        │
+│     └──────────────────────┘        │
+│  Category:  [Tops ▾]                │
+│  Color:     [Blue ▾]                │
+│        [ Save Item ]                │
+│  Items added: ●○○○○  (1 of 5)       │
+└─────────────────────────────────────┘
+Variant B (Treatment) – Bulk Upload + AI Auto-Categorization:
+Users select multiple photos at once from their camera roll. AI detects and categorizes each garment automatically. User reviews and confirms in one step.
+┌─────────────────────────────────────┐
+│  📸 Add Your Wardrobe               │
+│  ┌──────┐ ┌──────┐ ┌──────┐ ┌────┐  │
+│  │  ✓   │ │  ✓  │ │  ✓   │ │ +  │  │
+│  └──────┘ └──────┘ └──────┘ └────┘  │
+│  🤖 AI detected: 5 tops, 2 pants    │
+│     — look right?                   │
+│    [ ✓ Looks Good, Continue ]       │
+└─────────────────────────────────────┘
