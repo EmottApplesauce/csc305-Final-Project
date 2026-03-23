@@ -1,6 +1,6 @@
 - NPS: Trigger a pop-up survey using a FlutterFlow "Bottom Sheet" or "Alert" after the user clicks "Mark as Worn." Store the 1-10 integer in a user_feedback collection in Firestore. (This is just an idea on how to implement it. Will need to be changed depending on how the NPS was implemented)
 
-- NPS Gerald: I'm planning to enable the firebase option for pop survey using flutterflow bottom sheet, currently we would want the user to add clothes and when the user adds certain amount of clothes we will Store the 1-10 integer in a user_feedback collection in Firestore. (This is just an idea on how to implement it. Will need to be changed depending on how the NPS was implemented)
+- NPS William: I'm planning to enable the firebase option for pop survey using flutterflow bottom sheet, currently we would want the user to add clothes and when the user adds certain amount of clothes we will Store the 1-10 integer in a user_feedback collection in Firestore. (This is just an idea on how to implement it. Will need to be changed depending on how the NPS was implemented)
 
 - Adoption: Automatically tracked via Firebase Auth. We will count the number of new documents created in the users collection each day.
 - Adoption Gerald: I will enable the option ofr Firebase authenticaiton make a seprate json file fo the user collection each day
