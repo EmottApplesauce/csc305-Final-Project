@@ -1,4 +1,3 @@
-# A/B Test Designs
 
 ## Test 1
 William - A/B Test Name: "Day 1 Ads vs. Day 7 Ads"
@@ -35,6 +34,7 @@ Variations: Variant A (Control) shows the rating pop-up once the user uploads th
 
 <img width="522" height="557" alt="image" src="https://github.com/user-attachments/assets/c2687a63-c1ac-4348-a87f-dc0386f77a76" />
 
+
 ## Test 4 (main test)
 Gerald
 A/B Test Name: "Weather Temperature Display: Hidden vs. Visible on Outfit Card"
@@ -54,17 +54,6 @@ Variant A (Control) – No Temperature Shown:
 The outfit card displays weather condition icons (e.g. ☁ Partly cloudy) without a numeric temperature. Suggestions are described with general attributes like "lightweight" or "layering recommended" but are not tied to a specific reading the user can cross-reference with their own perception of the day.
 Variant B (Treatment) – Temperature Displayed:
 The outfit card shows the current temperature inline with the weather icon (e.g. ☁ Partly cloudy · 72°F), pulled from the user's location at the time the card is viewed. The suggestion is grounded in a specific, verifiable data point the user can immediately relate to their lived experience, increasing confidence in and adoption of the recommendation. Sonnet 4.6
-
-
-
-
-
-
-
-
-
-
-
 
 
 
