@@ -1,3 +1,6 @@
+# A/B Test Designs
+
+## Test 1
 William - A/B Test Name: "Day 1 Ads vs. Day 7 Ads"
 Hypothesis:
 What problem are we trying to solve? New users who see ads immediately on Day 1 may feel the app is cluttered or untrustworthy before they've experienced its core value, causing them to drop off before becoming habitual users. The bottleneck is early retention — if users churn in the first week, they never reach the point where monetization is even possible.
@@ -6,9 +9,7 @@ The specific bottleneck: Day 1 → Day 7 retention drop-off. This is where most 
 Hypothesis statement: If we delay showing ads until Day 7 (after users have experienced the AI outfit builder and laundry tracking), then Day 7 retention will increase, because users will have already built a habit and attached value to the app before being exposed to ads — making them more tolerant of them.
 What we're watching: Day 7 retention rate.
 
-
-
-
+## Test 2
 James - A/B Test Name: "AI Auto-Categorization vs. Manual Categorization During Wardrobe Setup"
 User Story Number: US5: User Take picture of clothes or storing there clothes
 Metrics: Adoption (Signups), DAU / Retention, Total items uploaded by users
