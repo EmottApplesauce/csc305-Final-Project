@@ -27,18 +27,12 @@ Users select multiple photos at once from their camera roll. AI detects and cate
 <img width="426" height="255" alt="image" src="https://github.com/user-attachments/assets/9db4cec6-5475-4cad-99ba-15371b166c2b" />
 
 ## Test 3
-A/B Test Name: "NPS Prompt Timing: Post-Outfit Confirmation vs. Fixed Session Interval"
-User Story Number: US6 – NPS User Interface
-Metrics: Net Promoter Score (NPS), Quick 1-2 question survey response rate (Happiness)
-Hypothesis:
-The app currently prompts users for NPS feedback on a fixed time-based interval (e.g. every 30 days), regardless of what the user was just doing. This means the prompt often appears at a neutral or even inconvenient moment — like when a user is mid-browse — resulting in users dismissing it without responding, or submitting a rating that doesn't reflect a meaningful experience. The bottleneck isn't that users are unwilling to give feedback, it's that they're being asked at the wrong moment. We believe that if the NPS prompt is triggered immediately after a user taps "Mark as Worn" — the clearest signal that they completed a satisfying end-to-end task — response rates and score accuracy will improve, because the user is at peak satisfaction having just successfully used the app's core feature, making them far more likely to engage with the prompt meaningfully.
-Single variable changed: the timing/trigger of the NPS prompt (fixed interval vs. post "Mark as Worn" confirmation).
-Experiment:
-Using Firebase A/B Testing via Remote Config with parameter nps_trigger_mode set to "interval" (Control) or "post_worn" (Treatment). Eligible users are those who have been using the app for at least 7 days and have added ≥ 5 items, ensuring feedback comes from users with enough experience to rate meaningfully. Split is 50/50. Firebase Analytics will track: nps_prompt_shown, nps_prompt_dismissed, nps_rating_submitted (with rating_value and trigger_context), and nps_feedback_entered. Primary metric is nps_prompt response rate (submissions ÷ prompts shown). Secondary metric is distribution of scores submitted.
-Variations:
-Variant A (Control) – Fixed Interval Prompt:
-NPS prompt appears as a modal after 30 days of app usage, regardless of what the user was doing.
-Variant B (Treatment) – Post "Mark as Worn" Prompt:
-NPS prompt appears immediately after the user taps "Mark as Worn," on the confirmation screen, while satisfaction is highest.
+
+Ethan - A/B Test Name: "App Rating Pop-Up Timing: After 5 Clothing Items Added vs. After First Outfit Created".
+User Story Number: US6: NPS UI.
+Metrics: Rating received (score), pop-up response rate (rated vs. dismissed), and average star rating per variant. Hypothesis: We believe that prompting users to rate the app at different moments in their journey will yield different engagement levels with the rating prompt — showing the pop-up after a user adds 5 pieces of clothing vs. after they create their first outfit may reflect different levels of satisfaction and investment in the app, one being a setup milestone and the other being a value-realization moment. Success is measured by which timing produces a higher average rating, indicating the more optimal moment to request feedback. Experiment: Using Firebase A/B Testing via Remote Config with parameter rating_prompt_trigger set to "five_items" (Variant A) or "first_outfit" (Variant B), with a 50/50 split across 100% of new users. Firebase Analytics will track rating_prompt_shown, rating_submitted (with star value), and rating_dismissed, with average rating score as the primary metric, run over 2–3 weeks or until statistical significance is reached.
+Variations: Variant A (Control) shows the rating pop-up once the user uploads their 5th clothing item; Variant B (Treatment) shows it immediately after the user generates or saves their first outfit.
+
+<img width="522" height="557" alt="image" src="https://github.com/user-attachments/assets/c2687a63-c1ac-4348-a87f-dc0386f77a76" />
 
 ## Test 4
