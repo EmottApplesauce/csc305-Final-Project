@@ -42,7 +42,7 @@ User Story Number: US6 – NPS User Interface
 Metrics: Net Promoter Score (NPS), quick 1–2 question survey response rate (Happiness)
 
 Hypothesis:
-The app currently displays weather. A suggestion like "lightweight linen shirt" is harder to evaluate when you don't know if it's 58°F or 82°F outside. The bottleneck isn't that users distrust the suggestions — it's that they can't verify them against real conditions, so they disengage. We believe that displaying the current temperature directly on the outfit card will give users a concrete anchor to validate the recommendation against their own experience, making them more likely to adopt the outfit, confirm it as worn, and submit NPS feedback that reflects genuine satisfaction rather than indifference.
+The app currently displays weather. When finding clothes you would want to know it's 58°F or 82°F outside. The bottleneck isn't that users distrust the suggestions — it's that they can't verify them against real conditions, so they disengage. We believe that displaying the current temperature directly on the outfit card will give users a concrete anchor to validate the recommendation against their own experience, making them more likely to adopt the outfit, confirm it as worn, and submit NPS feedback that reflects genuine satisfaction rather than indifference.
 
 Single Variable Changed: Whether or not the current temperature reading is displayed inline on the outfit suggestion card. All other UI elements, logic, and copy remain identical across both variants.
 
