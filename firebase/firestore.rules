@@ -1,0 +1,32 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    match /closet_items/{document} {
+      allow create: if request.auth != null;
+      allow read: if request.auth != null;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /npsResponses/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if false;
+      allow delete: if false;
+    }
+
+    match /users/{document} {
+      allow create: if request.auth.uid == document;
+      allow read: if request.auth.uid == document;
+      allow write: if true;
+      allow delete: if true;
+    }
+
+    match /outfits/{document} {
+      allow create: if true;
+      allow read: if true;
+      allow write: if true;
+      allow delete: if true;
+    }
+  }
+}
