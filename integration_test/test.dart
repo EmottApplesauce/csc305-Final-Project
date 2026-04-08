@@ -69,7 +69,8 @@ void main() async {
       await tester.pumpAndSettle(const Duration(milliseconds: 5000));
     });
 
-    testWidgets('Successful Clothing Upload', (WidgetTester tester) async {
+    testWidgets('Successful Clothing stored in closet',
+        (WidgetTester tester) async {
       _overrideOnError();
       await FirebaseAuth.instance.signInWithEmailAndPassword(
           email: 'DDDDRIZY223@gmail.com', password: 'Zimber@246');
