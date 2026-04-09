@@ -449,6 +449,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                                         AuthenticationPageWidget.routeName);
                                   },
                                   child: Text(
+                                    key: ValueKey('Text_e8j0'),
                                     'Register Now',
                                     style: FlutterFlowTheme.of(context)
                                         .bodyMedium

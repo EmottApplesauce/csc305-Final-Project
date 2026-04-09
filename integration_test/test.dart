@@ -116,12 +116,29 @@ void main() async {
       ));
       await GoogleFonts.pendingFonts();
 
-      await tester.pumpAndSettle();
+      await tester.tap(find.byKey(const ValueKey('Text_e8j0')));
+      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
+      await tester.enterText(
+          find.byKey(const ValueKey('SignUpEmail_34qt')), 'test@gmail.com');
+      FocusManager.instance.primaryFocus?.unfocus();
+      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
+      await tester.enterText(
+          find.byKey(const ValueKey('SignUpPass_1unp')), 'Zimber@246');
+      FocusManager.instance.primaryFocus?.unfocus();
+      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
+      await tester.enterText(
+          find.byKey(const ValueKey('Confrim_baw4')), 'Zimber@246');
+      FocusManager.instance.primaryFocus?.unfocus();
+      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
+      await tester.tap(find.byKey(const ValueKey('Button_nfto')));
+      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
       await tester.enterText(
           find.byKey(const ValueKey('Name_hutz')), 'Automation Testing');
+      FocusManager.instance.primaryFocus?.unfocus();
       await tester.pumpAndSettle(const Duration(milliseconds: 5000));
       await tester.enterText(
           find.byKey(const ValueKey('CityforAi_d98p')), 'providence');
+      FocusManager.instance.primaryFocus?.unfocus();
       await tester.pumpAndSettle(const Duration(milliseconds: 5000));
       await tester.tap(find.byKey(const ValueKey('FinshProfile_jgz2')));
     });

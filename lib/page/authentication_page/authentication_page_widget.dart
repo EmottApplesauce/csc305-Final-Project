@@ -120,6 +120,7 @@ class _AuthenticationPageWidgetState extends State<AuthenticationPageWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             4.0, 0.0, 4.0, 16.0),
                                         child: TextFormField(
+                                          key: ValueKey('SignUpEmail_34qt'),
                                           controller:
                                               _model.signUpEmailTextController,
                                           focusNode:
@@ -246,6 +247,7 @@ class _AuthenticationPageWidgetState extends State<AuthenticationPageWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             4.0, 0.0, 4.0, 12.0),
                                         child: TextFormField(
+                                          key: ValueKey('SignUpPass_1unp'),
                                           controller:
                                               _model.signUpPassTextController,
                                           focusNode: _model.signUpPassFocusNode,
@@ -389,6 +391,7 @@ class _AuthenticationPageWidgetState extends State<AuthenticationPageWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             4.0, 0.0, 4.0, 12.0),
                                         child: TextFormField(
+                                          key: ValueKey('Confrim_baw4'),
                                           controller:
                                               _model.confrimTextController,
                                           focusNode: _model.confrimFocusNode,
@@ -531,6 +534,7 @@ class _AuthenticationPageWidgetState extends State<AuthenticationPageWidget> {
                                         padding: EdgeInsetsDirectional.fromSTEB(
                                             0.0, 32.0, 12.0, 0.0),
                                         child: FFButtonWidget(
+                                          key: ValueKey('Button_nfto'),
                                           onPressed: () async {
                                             logFirebaseEvent(
                                                 'AUTHENTICATION_SIGN_UP_BTN_ON_TAP');
