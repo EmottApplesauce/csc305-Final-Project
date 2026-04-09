@@ -3,11 +3,11 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>966716708052-fo7ipe2mng6ohm25fji875pshu9m9u7n.apps.googleusercontent.com</string>
+	<string>966716708052-h84vfkurf9b8sd95r12i4mmur5fkg46b.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.966716708052-fo7ipe2mng6ohm25fji875pshu9m9u7n</string>
+	<string>com.googleusercontent.apps.966716708052-h84vfkurf9b8sd95r12i4mmur5fkg46b</string>
 	<key>ANDROID_CLIENT_ID</key>
-	<string>966716708052-u848ilukr9i48765a89ai79iv3knug21.apps.googleusercontent.com</string>
+	<string>966716708052-0dob8rgtu4pvcdf55p93dbafte840b93.apps.googleusercontent.com</string>
 	<key>API_KEY</key>
 	<string>AIzaSyDA-f_bwCxCjbJGMq4esCCrSlIp7b4rghk</string>
 	<key>GCM_SENDER_ID</key>
@@ -15,7 +15,7 @@
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
-	<string>com.mycompany.csc305finalproject</string>
+	<string>com.uricsc305.mixnmatch</string>
 	<key>PROJECT_ID</key>
 	<string>csc305-finalproject-ug9p6j</string>
 	<key>STORAGE_BUCKET</key>
@@ -31,7 +31,7 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:966716708052:ios:9e6f60201d7943916c9741</string>
+	<string>1:966716708052:ios:c61d6391e52658c56c9741</string>
 	<key>DATABASE_URL</key>
 	<string>https://csc305-finalproject-ug9p6j-default-rtdb.firebaseio.com</string>
 </dict>

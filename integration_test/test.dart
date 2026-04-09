@@ -56,30 +56,6 @@ void main() async {
       await tester.tap(find.byKey(const ValueKey('Button_e4ir')));
     });
 
-    testWidgets('Successful Category', (WidgetTester tester) async {
-      _overrideOnError();
-      await FirebaseAuth.instance.signInWithEmailAndPassword(
-          email: 'DDDDRIZY223@gmail.com', password: 'Zimber@246');
-      await tester.pumpWidget(ChangeNotifierProvider(
-        create: (context) => FFAppState(),
-        child: MyApp(
-          entryPage: BaseWidget(),
-        ),
-      ));
-      await GoogleFonts.pendingFonts();
-
-      await tester.tap(find.byKey(const ValueKey('Container_9xjj')));
-      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
-      await tester.tap(find.byKey(const ValueKey('StarRow')));
-      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
-      await tester.enterText(find.byKey(const ValueKey('Name_7938')), 'Shirt');
-      FocusManager.instance.primaryFocus?.unfocus();
-      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
-      await tester.tap(find.byKey(const ValueKey('Top')));
-      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
-      await tester.tap(find.byKey(const ValueKey('Button_e4ir')));
-    });
-
     testWidgets('Successful Clothing stored in closet',
         (WidgetTester tester) async {
       _overrideOnError();
@@ -141,6 +117,26 @@ void main() async {
       FocusManager.instance.primaryFocus?.unfocus();
       await tester.pumpAndSettle(const Duration(milliseconds: 5000));
       await tester.tap(find.byKey(const ValueKey('FinshProfile_jgz2')));
+    });
+
+    testWidgets('Successful Account Creation', (WidgetTester tester) async {
+      _overrideOnError();
+
+      await tester.pumpWidget(ChangeNotifierProvider(
+        create: (context) => FFAppState(),
+        child: const MyApp(),
+      ));
+      await GoogleFonts.pendingFonts();
+
+      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
+      await tester.enterText(find.byKey(const ValueKey('SignUpEmail_34qt')),
+          'test305sda@gmail.com');
+      await tester.enterText(
+          find.byKey(const ValueKey('SignUpPass_1unp')), 'Zimber@246');
+      await tester.enterText(
+          find.byKey(const ValueKey('Confrim_baw4')), 'Zimber@246');
+      await tester.tap(find.byKey(const ValueKey('Button_nfto')));
+      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
     });
   });
 }

@@ -1,4 +1,4 @@
-package com.mycompany.csc305finalproject
+package com.uricsc305.mixnmatch
 
 import io.flutter.embedding.android.FlutterActivity
 

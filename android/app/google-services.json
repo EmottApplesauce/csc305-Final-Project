@@ -49,6 +49,50 @@
           ]
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:966716708052:android:a7e16984d394bc906c9741",
+        "android_client_info": {
+          "package_name": "com.uricsc305.mixnmatch"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "966716708052-0dob8rgtu4pvcdf55p93dbafte840b93.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.uricsc305.mixnmatch",
+            "certificate_hash": "9bbb3186b2189ef16d8f272bdab59362c395cbb4"
+          }
+        },
+        {
+          "client_id": "966716708052-4c32n2951ir1mn9g5m4gdjvbo1930h2k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEl5t9xxuH0dOQrYW7tziqEy9Pyz-73aM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "966716708052-4c32n2951ir1mn9g5m4gdjvbo1930h2k.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "966716708052-fo7ipe2mng6ohm25fji875pshu9m9u7n.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.mycompany.csc305finalproject"
+              }
+            }
+          ]
+        }
+      }
     }
   ],
   "configuration_version": "1"
