@@ -345,6 +345,7 @@ class _CreatePostWidgetState extends State<CreatePostWidget> {
                                 borderRadius: BorderRadius.circular(16.0),
                               ),
                               child: TextFormField(
+                                key: ValueKey('Name_7938'),
                                 controller: _model.nameTextController,
                                 focusNode: _model.nameFocusNode,
                                 autofocus: false,

@@ -39,16 +39,19 @@ void main() async {
           email: 'DDDDRIZY223@gmail.com', password: 'Zimber@246');
       await tester.pumpWidget(ChangeNotifierProvider(
         create: (context) => FFAppState(),
-        child: const MyApp(),
+        child: MyApp(
+          entryPage: BaseWidget(),
+        ),
       ));
       await GoogleFonts.pendingFonts();
 
       await tester.tap(find.byKey(const ValueKey('Container_9xjj')));
       await tester.pumpAndSettle(const Duration(milliseconds: 5000));
-      await tester.tap(find.byKey(const ValueKey('Row')));
+      await tester.tap(find.byKey(const ValueKey('StarRow')));
       await tester.pumpAndSettle(const Duration(milliseconds: 5000));
       await tester.enterText(
           find.byKey(const ValueKey('createPost_l50f')), 'Shirt');
+      FocusManager.instance.primaryFocus?.unfocus();
       await tester.pumpAndSettle(const Duration(milliseconds: 5000));
       await tester.tap(find.byKey(const ValueKey('Button_e4ir')));
     });
@@ -59,14 +62,22 @@ void main() async {
           email: 'DDDDRIZY223@gmail.com', password: 'Zimber@246');
       await tester.pumpWidget(ChangeNotifierProvider(
         create: (context) => FFAppState(),
-        child: const MyApp(),
+        child: MyApp(
+          entryPage: BaseWidget(),
+        ),
       ));
       await GoogleFonts.pendingFonts();
 
       await tester.tap(find.byKey(const ValueKey('Container_9xjj')));
       await tester.pumpAndSettle(const Duration(milliseconds: 5000));
-      await tester.tap(find.byKey(const ValueKey('Row')));
+      await tester.tap(find.byKey(const ValueKey('StarRow')));
       await tester.pumpAndSettle(const Duration(milliseconds: 5000));
+      await tester.enterText(find.byKey(const ValueKey('Name_7938')), 'Shirt');
+      FocusManager.instance.primaryFocus?.unfocus();
+      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
+      await tester.tap(find.byKey(const ValueKey('Top')));
+      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
+      await tester.tap(find.byKey(const ValueKey('Button_e4ir')));
     });
 
     testWidgets('Successful Clothing stored in closet',
@@ -76,21 +87,24 @@ void main() async {
           email: 'DDDDRIZY223@gmail.com', password: 'Zimber@246');
       await tester.pumpWidget(ChangeNotifierProvider(
         create: (context) => FFAppState(),
-        child: const MyApp(),
+        child: MyApp(
+          entryPage: BaseWidget(),
+        ),
       ));
       await GoogleFonts.pendingFonts();
 
       await tester.tap(find.byKey(const ValueKey('Container_9xjj')));
       await tester.pumpAndSettle(const Duration(milliseconds: 5000));
-      await tester.tap(find.byKey(const ValueKey('Row')));
+      await tester.tap(find.byKey(const ValueKey('StarRow')));
       await tester.pumpAndSettle(const Duration(milliseconds: 5000));
-      await tester.enterText(
-          find.byKey(const ValueKey('createPost_l50f')), 'Shirt');
+      await tester.enterText(find.byKey(const ValueKey('Name_7938')), 'Shirt');
+      FocusManager.instance.primaryFocus?.unfocus();
       await tester.pumpAndSettle(const Duration(milliseconds: 5000));
-      await tester.tap(find.byKey(const ValueKey('createPost_l50f')));
+      await tester.tap(find.byKey(const ValueKey('Top')));
+      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
+      await tester.tap(find.byKey(const ValueKey('Button_e4ir')));
       await tester.pumpAndSettle(const Duration(milliseconds: 5000));
       await tester.tap(find.byKey(const ValueKey('Column_xapa')));
-      await tester.pumpAndSettle(const Duration(milliseconds: 5000));
     });
 
     testWidgets('Successful Weather', (WidgetTester tester) async {

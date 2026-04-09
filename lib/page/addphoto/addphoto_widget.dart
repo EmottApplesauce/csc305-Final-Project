@@ -142,8 +142,8 @@ class _AddphotoWidgetState extends State<AddphotoWidget> {
                   hoverColor: Colors.transparent,
                   highlightColor: Colors.transparent,
                   onTap: () async {
-                    logFirebaseEvent('ADDPHOTO_COMP_Row_swrv5lrz_ON_TAP');
-                    logFirebaseEvent('Row_navigate_to');
+                    logFirebaseEvent('ADDPHOTO_COMP_StarRow_ON_TAP');
+                    logFirebaseEvent('StarRow_navigate_to');
 
                     context.pushNamed(CreatePostWidget.routeName);
                   },
