@@ -119,6 +119,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 4.0, 0.0, 4.0, 16.0),
                             child: TextFormField(
+                              key: ValueKey('EmailLogin_a2vw'),
                               controller: _model.emailLoginTextController,
                               focusNode: _model.emailLoginFocusNode,
                               onChanged: (_) => EasyDebounce.debounce(
@@ -220,6 +221,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 4.0, 0.0, 4.0, 12.0),
                             child: TextFormField(
+                              key: ValueKey('PasswordLogin_xhtv'),
                               controller: _model.passwordLoginTextController,
                               focusNode: _model.passwordLoginFocusNode,
                               onChanged: (_) => EasyDebounce.debounce(
@@ -335,6 +337,7 @@ class _LoginPageWidgetState extends State<LoginPageWidget> {
                             padding: EdgeInsetsDirectional.fromSTEB(
                                 4.0, 0.0, 4.0, 0.0),
                             child: FFButtonWidget(
+                              key: ValueKey('Button_ukx5'),
                               onPressed: () async {
                                 logFirebaseEvent(
                                     'LOGIN_PAGE_PAGE_LOG_IN_BTN_ON_TAP');
