@@ -776,6 +776,7 @@ class _ChangepasswordWidgetState extends State<ChangepasswordWidget> {
                                           .fontStyle,
                                     ),
                                     color: Colors.white,
+                                    fontSize: 16.0,
                                     letterSpacing: 0.0,
                                     fontWeight: FontWeight.w600,
                                     fontStyle: FlutterFlowTheme.of(context)

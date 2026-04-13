@@ -169,6 +169,25 @@ void main() async {
     );
     expect(find.text('bottom'), findsWidgets);
   });
+
+  testWidgets('US 3 Profile Creation', (WidgetTester tester) async {
+    _overrideOnError();
+    await FirebaseAuth.instance.signInWithEmailAndPassword(
+        email: 'qwerty@gmail.com', password: 'qwerty');
+    await tester.pumpWidget(ChangeNotifierProvider(
+      create: (context) => FFAppState(),
+      child: MyApp(
+        entryPage: OnboardingWidget(),
+      ),
+    ));
+    await GoogleFonts.pendingFonts();
+
+    await tester.tap(find.byKey(const ValueKey('Name_hutz')));
+    await tester.enterText(find.byKey(const ValueKey('Name_hutz')), 'JL278');
+    await tester.tap(find.byKey(const ValueKey('FinshProfile_jgz2')));
+    await tester.pumpAndSettle(const Duration(milliseconds: 3000));
+    expect(find.byKey(const ValueKey('Stack_cqeg')), findsWidgets);
+  });
 }
 
 // There are certain types of errors that can happen during tests but

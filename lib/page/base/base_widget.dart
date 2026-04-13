@@ -994,76 +994,47 @@ class _BaseWidgetState extends State<BaseWidget> with TickerProviderStateMixin {
                                     ].divide(SizedBox(height: 4.0)),
                                   ),
                                 ),
-                                Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    Icon(
-                                      Icons.auto_awesome_rounded,
-                                      color: Color(0x55C8B8FF),
-                                      size: 22.0,
-                                    ),
-                                    Text(
-                                      'Mix',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .override(
-                                            font: GoogleFonts.inter(
-                                              fontWeight:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodySmall
-                                                      .fontWeight,
-                                              fontStyle:
-                                                  FlutterFlowTheme.of(context)
-                                                      .bodySmall
-                                                      .fontStyle,
-                                            ),
-                                            color: Color(0x55C8B8FF),
-                                            fontSize: 10.0,
-                                            letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodySmall
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodySmall
-                                                    .fontStyle,
-                                          ),
-                                    ),
-                                  ].divide(SizedBox(height: 4.0)),
-                                ),
-                                Column(
-                                  mainAxisSize: MainAxisSize.max,
-                                  mainAxisAlignment: MainAxisAlignment.center,
-                                  crossAxisAlignment: CrossAxisAlignment.center,
-                                  children: [
-                                    InkWell(
-                                      splashColor: Colors.transparent,
-                                      focusColor: Colors.transparent,
-                                      hoverColor: Colors.transparent,
-                                      highlightColor: Colors.transparent,
-                                      onTap: () async {
-                                        logFirebaseEvent(
-                                            'BASE_PAGE_Icon_sfwahi0d_ON_TAP');
-                                        logFirebaseEvent('Icon_navigate_to');
+                                InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    logFirebaseEvent(
+                                        'BASE_PAGE_Column_aaio7y5c_ON_TAP');
+                                    logFirebaseEvent('Column_navigate_to');
 
-                                        context
-                                            .goNamed(ProfileWidget.routeName);
-                                      },
-                                      child: Icon(
-                                        Icons.person_outline_rounded,
+                                    context.pushNamed(OutfitsWidget.routeName);
+                                  },
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Icon(
+                                        Icons.auto_awesome_rounded,
                                         color: Color(0x55C8B8FF),
                                         size: 22.0,
                                       ),
-                                    ),
-                                    Text(
-                                      'Profile',
-                                      style: FlutterFlowTheme.of(context)
-                                          .bodySmall
-                                          .override(
-                                            font: GoogleFonts.inter(
+                                      Text(
+                                        'Outfits',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodySmall
+                                            .override(
+                                              font: GoogleFonts.inter(
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodySmall
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodySmall
+                                                        .fontStyle,
+                                              ),
+                                              color: Color(0x55C8B8FF),
+                                              fontSize: 10.0,
+                                              letterSpacing: 0.0,
                                               fontWeight:
                                                   FlutterFlowTheme.of(context)
                                                       .bodySmall
@@ -1073,20 +1044,77 @@ class _BaseWidgetState extends State<BaseWidget> with TickerProviderStateMixin {
                                                       .bodySmall
                                                       .fontStyle,
                                             ),
-                                            color: Color(0x55C8B8FF),
-                                            fontSize: 10.0,
-                                            letterSpacing: 0.0,
-                                            fontWeight:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodySmall
-                                                    .fontWeight,
-                                            fontStyle:
-                                                FlutterFlowTheme.of(context)
-                                                    .bodySmall
-                                                    .fontStyle,
-                                          ),
-                                    ),
-                                  ].divide(SizedBox(height: 4.0)),
+                                      ),
+                                    ].divide(SizedBox(height: 4.0)),
+                                  ),
+                                ),
+                                InkWell(
+                                  splashColor: Colors.transparent,
+                                  focusColor: Colors.transparent,
+                                  hoverColor: Colors.transparent,
+                                  highlightColor: Colors.transparent,
+                                  onTap: () async {
+                                    logFirebaseEvent(
+                                        'BASE_PAGE_Column_g7v0crmb_ON_TAP');
+                                    logFirebaseEvent('Column_navigate_to');
+
+                                    context.pushNamed(ProfileWidget.routeName);
+                                  },
+                                  child: Column(
+                                    mainAxisSize: MainAxisSize.max,
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      InkWell(
+                                        splashColor: Colors.transparent,
+                                        focusColor: Colors.transparent,
+                                        hoverColor: Colors.transparent,
+                                        highlightColor: Colors.transparent,
+                                        onTap: () async {
+                                          logFirebaseEvent(
+                                              'BASE_PAGE_Icon_sfwahi0d_ON_TAP');
+                                          logFirebaseEvent('Icon_navigate_to');
+
+                                          context
+                                              .goNamed(ProfileWidget.routeName);
+                                        },
+                                        child: Icon(
+                                          Icons.person_outline_rounded,
+                                          color: Color(0x55C8B8FF),
+                                          size: 22.0,
+                                        ),
+                                      ),
+                                      Text(
+                                        'Profile',
+                                        style: FlutterFlowTheme.of(context)
+                                            .bodySmall
+                                            .override(
+                                              font: GoogleFonts.inter(
+                                                fontWeight:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodySmall
+                                                        .fontWeight,
+                                                fontStyle:
+                                                    FlutterFlowTheme.of(context)
+                                                        .bodySmall
+                                                        .fontStyle,
+                                              ),
+                                              color: Color(0x55C8B8FF),
+                                              fontSize: 10.0,
+                                              letterSpacing: 0.0,
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodySmall
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodySmall
+                                                      .fontStyle,
+                                            ),
+                                      ),
+                                    ].divide(SizedBox(height: 4.0)),
+                                  ),
                                 ),
                               ],
                             ),

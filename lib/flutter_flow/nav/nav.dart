@@ -114,6 +114,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
           builder: (context, params) => Nps4Widget(),
         ),
         FFRoute(
+          name: SettingsWidget.routeName,
+          path: SettingsWidget.routePath,
+          builder: (context, params) => SettingsWidget(),
+        ),
+        FFRoute(
           name: YepWidget.routeName,
           path: YepWidget.routePath,
           builder: (context, params) => YepWidget(),
@@ -124,11 +129,6 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
           builder: (context, params) => ProfileWidget(),
         ),
         FFRoute(
-          name: SettingsWidget.routeName,
-          path: SettingsWidget.routePath,
-          builder: (context, params) => SettingsWidget(),
-        ),
-        FFRoute(
           name: ChangepasswordWidget.routeName,
           path: ChangepasswordWidget.routePath,
           builder: (context, params) => ChangepasswordWidget(),
@@ -137,6 +137,11 @@ GoRouter createRouter(AppStateNotifier appStateNotifier, [Widget? entryPage]) =>
           name: BaseWidget.routeName,
           path: BaseWidget.routePath,
           builder: (context, params) => BaseWidget(),
+        ),
+        FFRoute(
+          name: OutfitsWidget.routeName,
+          path: OutfitsWidget.routePath,
+          builder: (context, params) => OutfitsWidget(),
         )
       ].map((r) => r.toRoute(appStateNotifier)).toList(),
     );

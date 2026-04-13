@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import '/backend/backend.dart';
 import '/backend/schema/enums/enums.dart';
+import 'flutter_flow/flutter_flow_util.dart';
 
 class FFAppState extends ChangeNotifier {
   static FFAppState _instance = FFAppState._internal();
@@ -45,9 +47,27 @@ class FFAppState extends ChangeNotifier {
     _weatherDescription = value;
   }
 
-  String _name = '';
-  String get name => _name;
-  set name(String value) {
-    _name = value;
+  DocumentReference? _selectedTop;
+  DocumentReference? get selectedTop => _selectedTop;
+  set selectedTop(DocumentReference? value) {
+    _selectedTop = value;
+  }
+
+  DocumentReference? _selectedBottom;
+  DocumentReference? get selectedBottom => _selectedBottom;
+  set selectedBottom(DocumentReference? value) {
+    _selectedBottom = value;
+  }
+
+  DocumentReference? _selectedShoes;
+  DocumentReference? get selectedShoes => _selectedShoes;
+  set selectedShoes(DocumentReference? value) {
+    _selectedShoes = value;
+  }
+
+  String _currentSlot = '';
+  String get currentSlot => _currentSlot;
+  set currentSlot(String value) {
+    _currentSlot = value;
   }
 }

@@ -60,6 +60,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
               ),
               decoration: BoxDecoration(),
               child: Stack(
+                key: ValueKey('Stack_cqeg'),
                 children: [
                   SingleChildScrollView(
                     child: Column(
@@ -132,6 +133,9 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                           .displayLarge
                                                           .fontStyle,
                                                 ),
+                                                color:
+                                                    FlutterFlowTheme.of(context)
+                                                        .alternate,
                                                 fontSize: 30.0,
                                                 letterSpacing: 0.0,
                                                 fontWeight:
@@ -176,7 +180,7 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                   .fontStyle,
                                         ),
                                         color: FlutterFlowTheme.of(context)
-                                            .primaryText,
+                                            .alternate,
                                         fontSize: 13.0,
                                         letterSpacing: 0.0,
                                         fontWeight: FontWeight.bold,
@@ -486,58 +490,73 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                             mainAxisAlignment: MainAxisAlignment.spaceAround,
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Container(
-                                    width: 40.0,
-                                    height: 40.0,
-                                    decoration: BoxDecoration(
-                                      gradient: LinearGradient(
-                                        colors: [
-                                          Color(0xFF7C3AED),
-                                          Color(0xFF9D5CF5)
-                                        ],
-                                        stops: [0.0, 1.0],
-                                        begin: AlignmentDirectional(1.0, 1.0),
-                                        end: AlignmentDirectional(-1.0, -1.0),
+                              InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  logFirebaseEvent(
+                                      'PROFILE_PAGE_Column_nvns2tse_ON_TAP');
+                                  logFirebaseEvent('Column_navigate_to');
+
+                                  context.pushNamed(BaseWidget.routeName);
+                                },
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Container(
+                                      width: 40.0,
+                                      height: 40.0,
+                                      decoration: BoxDecoration(
+                                        gradient: LinearGradient(
+                                          colors: [
+                                            Color(0xFF7C3AED),
+                                            Color(0xFF9D5CF5)
+                                          ],
+                                          stops: [0.0, 1.0],
+                                          begin: AlignmentDirectional(1.0, 1.0),
+                                          end: AlignmentDirectional(-1.0, -1.0),
+                                        ),
+                                        borderRadius:
+                                            BorderRadius.circular(14.0),
                                       ),
-                                      borderRadius: BorderRadius.circular(14.0),
-                                    ),
-                                    child: Align(
-                                      alignment: AlignmentDirectional(0.0, 0.0),
-                                      child: Icon(
-                                        Icons.home_rounded,
-                                        color: Colors.white,
-                                        size: 20.0,
+                                      child: Align(
+                                        alignment:
+                                            AlignmentDirectional(0.0, 0.0),
+                                        child: Icon(
+                                          Icons.home_rounded,
+                                          color: Colors.white,
+                                          size: 20.0,
+                                        ),
                                       ),
                                     ),
-                                  ),
-                                  Text(
-                                    'Home',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodySmall
-                                        .override(
-                                          font: GoogleFonts.inter(
+                                    Text(
+                                      'Home',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodySmall
+                                          .override(
+                                            font: GoogleFonts.inter(
+                                              fontWeight: FontWeight.w600,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodySmall
+                                                      .fontStyle,
+                                            ),
+                                            color: Color(0xFFE0D7FF),
+                                            fontSize: 10.0,
+                                            letterSpacing: 0.0,
                                             fontWeight: FontWeight.w600,
                                             fontStyle:
                                                 FlutterFlowTheme.of(context)
                                                     .bodySmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0xFFE0D7FF),
-                                          fontSize: 10.0,
-                                          letterSpacing: 0.0,
-                                          fontWeight: FontWeight.w600,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmall
-                                                  .fontStyle,
-                                        ),
-                                  ),
-                                ].divide(SizedBox(height: 4.0)),
+                                    ),
+                                  ].divide(SizedBox(height: 4.0)),
+                                ),
                               ),
                               InkWell(
                                 splashColor: Colors.transparent,
@@ -592,22 +611,46 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                   ].divide(SizedBox(height: 4.0)),
                                 ),
                               ),
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.auto_awesome_rounded,
-                                    color: Color(0x55C8B8FF),
-                                    size: 22.0,
-                                  ),
-                                  Text(
-                                    'Mix',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodySmall
-                                        .override(
-                                          font: GoogleFonts.inter(
+                              InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  logFirebaseEvent(
+                                      'PROFILE_PAGE_Column_w55gmaib_ON_TAP');
+                                  logFirebaseEvent('Column_navigate_to');
+
+                                  context.pushNamed(OutfitsWidget.routeName);
+                                },
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Icon(
+                                      Icons.auto_awesome_rounded,
+                                      color: Color(0x55C8B8FF),
+                                      size: 22.0,
+                                    ),
+                                    Text(
+                                      'Outfits',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodySmall
+                                          .override(
+                                            font: GoogleFonts.inter(
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodySmall
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodySmall
+                                                      .fontStyle,
+                                            ),
+                                            color: Color(0x55C8B8FF),
+                                            fontSize: 10.0,
+                                            letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodySmall
@@ -617,37 +660,50 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                     .bodySmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0x55C8B8FF),
-                                          fontSize: 10.0,
-                                          letterSpacing: 0.0,
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmall
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmall
-                                                  .fontStyle,
-                                        ),
-                                  ),
-                                ].divide(SizedBox(height: 4.0)),
+                                    ),
+                                  ].divide(SizedBox(height: 4.0)),
+                                ),
                               ),
-                              Column(
-                                mainAxisSize: MainAxisSize.max,
-                                mainAxisAlignment: MainAxisAlignment.center,
-                                crossAxisAlignment: CrossAxisAlignment.center,
-                                children: [
-                                  Icon(
-                                    Icons.person_outline_rounded,
-                                    color: Color(0x55C8B8FF),
-                                    size: 22.0,
-                                  ),
-                                  Text(
-                                    'Profile',
-                                    style: FlutterFlowTheme.of(context)
-                                        .bodySmall
-                                        .override(
-                                          font: GoogleFonts.inter(
+                              InkWell(
+                                splashColor: Colors.transparent,
+                                focusColor: Colors.transparent,
+                                hoverColor: Colors.transparent,
+                                highlightColor: Colors.transparent,
+                                onTap: () async {
+                                  logFirebaseEvent(
+                                      'PROFILE_PAGE_Column_s3as3wcn_ON_TAP');
+                                  logFirebaseEvent('Column_navigate_to');
+
+                                  context.pushNamed(OnboardingWidget.routeName);
+                                },
+                                child: Column(
+                                  mainAxisSize: MainAxisSize.max,
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Icon(
+                                      Icons.person_outline_rounded,
+                                      color: Color(0x55C8B8FF),
+                                      size: 22.0,
+                                    ),
+                                    Text(
+                                      'Profile',
+                                      style: FlutterFlowTheme.of(context)
+                                          .bodySmall
+                                          .override(
+                                            font: GoogleFonts.inter(
+                                              fontWeight:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodySmall
+                                                      .fontWeight,
+                                              fontStyle:
+                                                  FlutterFlowTheme.of(context)
+                                                      .bodySmall
+                                                      .fontStyle,
+                                            ),
+                                            color: Color(0x55C8B8FF),
+                                            fontSize: 10.0,
+                                            letterSpacing: 0.0,
                                             fontWeight:
                                                 FlutterFlowTheme.of(context)
                                                     .bodySmall
@@ -657,20 +713,9 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                                     .bodySmall
                                                     .fontStyle,
                                           ),
-                                          color: Color(0x55C8B8FF),
-                                          fontSize: 10.0,
-                                          letterSpacing: 0.0,
-                                          fontWeight:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmall
-                                                  .fontWeight,
-                                          fontStyle:
-                                              FlutterFlowTheme.of(context)
-                                                  .bodySmall
-                                                  .fontStyle,
-                                        ),
-                                  ),
-                                ].divide(SizedBox(height: 4.0)),
+                                    ),
+                                  ].divide(SizedBox(height: 4.0)),
+                                ),
                               ),
                             ],
                           ),

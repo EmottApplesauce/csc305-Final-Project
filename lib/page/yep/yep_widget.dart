@@ -6,7 +6,6 @@ import '/flutter_flow/flutter_flow_theme.dart';
 import '/flutter_flow/flutter_flow_util.dart';
 import '/flutter_flow/form_field_controller.dart';
 import '/index.dart';
-import 'package:easy_debounce/easy_debounce.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:provider/provider.dart';
@@ -105,19 +104,6 @@ class _YepWidgetState extends State<YepWidget> {
                             child: TextFormField(
                               controller: _model.textController,
                               focusNode: _model.textFieldFocusNode,
-                              onChanged: (_) => EasyDebounce.debounce(
-                                '_model.textController',
-                                Duration(milliseconds: 2000),
-                                () async {
-                                  logFirebaseEvent(
-                                      'YEP_TextField_zpyxskmh_ON_TEXTFIELD_CHAN');
-                                  logFirebaseEvent(
-                                      'TextField_update_app_state');
-                                  FFAppState().name =
-                                      _model.textController.text;
-                                  safeSetState(() {});
-                                },
-                              ),
                               autofocus: false,
                               enabled: true,
                               obscureText: false,
@@ -363,13 +349,59 @@ class _YepWidgetState extends State<YepWidget> {
                           itemBuilder: (context, gridViewIndex) {
                             final gridViewClosetItemsRecord =
                                 gridViewClosetItemsRecordList[gridViewIndex];
-                            return ClipRRect(
-                              borderRadius: BorderRadius.circular(8.0),
-                              child: Image.network(
-                                gridViewClosetItemsRecord.photoUrl,
-                                width: 200.0,
-                                height: 200.0,
-                                fit: BoxFit.cover,
+                            return InkWell(
+                              splashColor: Colors.transparent,
+                              focusColor: Colors.transparent,
+                              hoverColor: Colors.transparent,
+                              highlightColor: Colors.transparent,
+                              onTap: () async {
+                                logFirebaseEvent(
+                                    'YEP_PAGE_Container_qxs72rwu_ON_TAP');
+                                if (_model.choiceChipsValue == 'Top') {
+                                  logFirebaseEvent(
+                                      'Container_update_app_state');
+                                  FFAppState().selectedTop =
+                                      gridViewClosetItemsRecord.reference;
+                                  safeSetState(() {});
+                                } else {
+                                  if (_model.choiceChipsValue == 'Bottom') {
+                                    logFirebaseEvent(
+                                        'Container_update_app_state');
+                                    FFAppState().selectedBottom =
+                                        gridViewClosetItemsRecord.reference;
+                                    safeSetState(() {});
+                                  } else {
+                                    if (FFAppState().currentSlot == 'Shoes') {
+                                      logFirebaseEvent(
+                                          'Container_update_app_state');
+                                      FFAppState().selectedShoes =
+                                          gridViewClosetItemsRecord.reference;
+                                      safeSetState(() {});
+                                    }
+                                    logFirebaseEvent('Container_navigate_to');
+
+                                    context.pushNamed(OutfitsWidget.routeName);
+                                  }
+
+                                  logFirebaseEvent('Container_navigate_to');
+
+                                  context.pushNamed(OutfitsWidget.routeName);
+                                }
+
+                                logFirebaseEvent('Container_navigate_back');
+                                context.safePop();
+                              },
+                              child: Container(
+                                decoration: BoxDecoration(),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(8.0),
+                                  child: Image.network(
+                                    gridViewClosetItemsRecord.photoUrl,
+                                    width: 200.0,
+                                    height: 200.0,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
                               ),
                             );
                           },
@@ -505,13 +537,27 @@ class _YepWidgetState extends State<YepWidget> {
                                 mainAxisAlignment: MainAxisAlignment.center,
                                 crossAxisAlignment: CrossAxisAlignment.center,
                                 children: [
-                                  Icon(
-                                    Icons.auto_awesome_rounded,
-                                    color: Color(0x55C8B8FF),
-                                    size: 22.0,
+                                  InkWell(
+                                    splashColor: Colors.transparent,
+                                    focusColor: Colors.transparent,
+                                    hoverColor: Colors.transparent,
+                                    highlightColor: Colors.transparent,
+                                    onTap: () async {
+                                      logFirebaseEvent(
+                                          'YEP_PAGE_Icon_75nf93rf_ON_TAP');
+                                      logFirebaseEvent('Icon_navigate_to');
+
+                                      context
+                                          .pushNamed(OutfitsWidget.routeName);
+                                    },
+                                    child: Icon(
+                                      Icons.auto_awesome_rounded,
+                                      color: Color(0x55C8B8FF),
+                                      size: 22.0,
+                                    ),
                                   ),
                                   Text(
-                                    'Outfit',
+                                    'Outfits',
                                     style: FlutterFlowTheme.of(context)
                                         .bodySmall
                                         .override(

@@ -5,6 +5,14 @@ import 'yep_widget.dart' show YepWidget;
 import 'package:flutter/material.dart';
 
 class YepModel extends FlutterFlowModel<YepWidget> {
+  ///  Local state fields for this page.
+
+  String selectedTop = 'Choose a top';
+
+  String selectedBottom = 'Choose a bottom';
+
+  String selectedShoes = 'Choose shoes';
+
   ///  State fields for stateful widgets in this page.
 
   // State field(s) for TextField widget.
