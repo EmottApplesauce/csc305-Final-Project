@@ -4,7 +4,7 @@
 
 The Lean Canvas Business Model for MixnMatch can be accessed using the link below:
 
-[View the MixnMatch Lean Canvas Business Model]([https://docs.google.com/presentation/d/1-j4T5kV1gYPjQIPBToPAgHYPOlq3NAfGMxBuXnhCUIE/edit?usp=sharing](https://docs.google.com/presentation/d/1dvhtyKn3BCy_tZEvvX32yiTkZb3otq1ZdCAk5CuGGYc/edit?usp=sharing))
+[View the MixnMatch Lean Canvas Business Model](https://docs.google.com/presentation/d/1-j4T5kV1gYPjQIPBToPAgHYPOlq3NAfGMxBuXnhCUIE/edit?usp=sharing](https://docs.google.com/presentation/d/1dvhtyKn3BCy_tZEvvX32yiTkZb3otq1ZdCAk5CuGGYc/edit?usp=sharing)
 
 ---
 
